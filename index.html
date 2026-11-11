@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>MISSION PYTHON — The Ultimate Python Speedrun | ACM VIT-AP</title>
+<style>
+  :root { color-scheme: light; supported-color-schemes: light; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:#eee9e4 !important; }
+  body { font-family: Arial, Helvetica, sans-serif; color:#211b19; }
+  .page { width:100%; padding:24px 12px; background:#eee9e4; }
+  .mail { width:100%; max-width:620px; margin:0 auto; background:#fffaf1; border:1px solid #d8c7b6; }
+  .top { background:#241512; color:#fff; padding:22px 28px 18px; border-bottom:5px solid #9f3028; }
+  .brand { display:flex; align-items:center; justify-content:center; gap:20px; text-align:left; width:100%; max-width:460px; margin:0 auto; }
+  .brand img { display:block; flex:0 0 76px; width:76px; height:76px; object-fit:contain; border-radius:50%; background:#fff; }
+  .brand-name { font-size:19px; font-weight:800; letter-spacing:2px; line-height:1.25; white-space:normal; }
+  .brand-sub { font-size:10px; letter-spacing:2.5px; color:#e7c8b9; margin-top:4px; }
+  .present { text-align:center; color:#e9c5b5; font-size:11px; letter-spacing:4px; margin-top:14px; font-weight:bold; }
+  .hero { padding:24px 30px 12px; background:#fffaf1; }
+  .eyebrow { color:#96352b; font-weight:800; font-size:11px; letter-spacing:3px; text-transform:uppercase; }
+  h1 { margin:8px 0 0; font-size:43px; line-height:.98; letter-spacing:-1.5px; color:#201714; }
+  h1 span { display:block; color:#a52e27; }
+  .subhead { margin-top:12px; font-size:13px; line-height:1.5; font-weight:800; letter-spacing:1.7px; color:#6d2924; }
+  .rocket { display:block; width:100%; height:auto; margin:18px auto 0; border:1px solid #d7b8a4; object-fit:contain; }
+  .intro { padding:10px 30px 22px; background:#fffaf1; }
+  .intro p { margin:0; color:#392a25; font-size:15px; line-height:1.65; }
+  .mission { margin:0 30px 22px; padding:17px 19px; background:#f3e4c9; border:1px solid #d9bd91; border-left:5px solid #a3332a; }
+  .mission-title { margin:0 0 10px; color:#8e2b25; font-size:13px; font-weight:800; letter-spacing:2px; text-transform:uppercase; }
+  .topics { margin:0; padding-left:19px; color:#33231e; font-size:14px; line-height:1.75; }
+  .event { margin:0 30px 18px; border-collapse:collapse; width:calc(100% - 60px); background:#fff; border:1px solid #d9c8b9; }
+  .event td { padding:13px 14px; border:1px solid #e4d8cc; vertical-align:top; width:50%; }
+  .label { display:block; color:#9a3329; font-size:10px; font-weight:800; letter-spacing:2px; margin-bottom:5px; }
+  .value { color:#251b18; font-size:15px; line-height:1.4; font-weight:800; }
+  .small { color:#6d5a50; font-size:12px; font-weight:normal; }
+  .register-wrap { text-align:center; padding:2px 30px 23px; }
+  .register { display:inline-block; background:#a42f27; border:2px solid #7f211c; color:#fff !important; text-decoration:none; font-size:14px; font-weight:800; letter-spacing:1.5px; padding:14px 30px; }
+  .register-note { margin-top:9px; font-size:11px; color:#806b60; }
+  .character-wrap { padding:0 30px 22px; text-align:center; }
+  .character { display:block; width:100%; max-width:420px; height:auto; margin:0 auto; border:1px solid #d5c1b0; }
+  .closing { background:#241512; color:#f8e8d8; padding:20px 25px; text-align:center; border-top:5px solid #9f3028; }
+  .closing strong { display:block; color:#f0c9a5; font-size:16px; letter-spacing:1.2px; }
+  .closing p { margin:8px 0 0; color:#e6d2c4; font-size:11px; letter-spacing:1px; }
+  @media screen and (max-width:600px) {
+    .page { padding:0; background:#fffaf1 !important; }
+    .mail { border-left:0; border-right:0; }
+    .top { padding:18px 16px 16px; }
+    .brand img { flex-basis:64px; width:64px; height:64px; }
+    .brand-name { font-size:15px; letter-spacing:1.5px; }
+    .hero { padding:22px 20px 10px; }
+    h1 { font-size:37px; }
+    .intro { padding:10px 20px 20px; }
+    .mission { margin:0 20px 18px; padding:15px; }
+    .event { margin:0 20px 18px; width:calc(100% - 40px); }
+    .event td { display:block; width:100%; padding:12px 14px; }
+    .register-wrap { padding:2px 20px 20px; }
+    .register { display:block; padding:14px 12px; }
+    .character-wrap { padding:0 20px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <main class="mail" role="article" aria-label="ACM VIT-AP Mission Python invitation">
+    <header class="top">
+      <div class="brand">
+        <img src="assets/acm-chapter-logo.png" alt="ACM Student Chapter VIT-AP logo">
+        <div>
+          <div class="brand-name">ACM STUDENT CHAPTER</div>
+          <div class="brand-sub">VIT-AP UNIVERSITY</div>
+        </div>
+      </div>
+      <div class="present">PRESENTS</div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">THE ULTIMATE PYTHON SPEEDRUN</div>
+      <h1>MISSION <span>PYTHON</span></h1>
+      <div class="subhead">ONE MISSION. ONE GOAL. ACE YOUR PYTHON FAT.</div>
+      <img class="rocket" src="assets/mission-python-rocket-snake.jpg" alt="Mission Python snake wrapped around a rocket on a brick wall">
+    </section>
+
+    <section class="intro">
+      <p><strong>Hey Freshies!</strong><br><br>Worried about your upcoming FAT (CSE1012)? The ACM Student Chapter, VIT-AP brings you <strong>MISSION PYTHON</strong> — an intensive revision and coding session designed to help you prepare for your FAT.</p>
+    </section>
+
+    <section class="mission">
+      <h2 class="mission-title">Your mission briefing: What to expect</h2>
+      <ul class="topics">
+        <li>Important Python concepts and quick revision</li>
+        <li>Loops, operators, branching and data structures</li>
+        <li>Nested loops and pattern programming</li>
+        <li>Regular expressions</li>
+        <li>Important coding problems and practical examples</li>
+      </ul>
+    </section>
+
+    <table class="event" role="presentation" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><span class="label">DATE</span><div class="value">14 November 2026</div><div class="small">Saturday</div></td>
+        <td><span class="label">TIME</span><div class="value">6:00 PM – 10:30 PM</div><div class="small">Break: 8:00 PM – 8:45 PM</div></td>
+      </tr>
+      <tr>
+        <td colspan="2"><span class="label">MODE</span><div class="value">ONLINE</div></td>
+      </tr>
+    </table>
+
+    <div class="register-wrap">
+      <a class="register" href="https://forms.gle/86XCFAWkFeZMCFov5" target="_blank" rel="noopener">REGISTER FOR THE MISSION&nbsp; ↗</a>
+      <div class="register-note">Don't miss this opportunity to strengthen your Python skills and prepare confidently for your FAT!</div>
+    </div>
+
+    <div class="character-wrap">
+      <img class="character" src="assets/mission-python-character.jpg" alt="Mission Python character from the event poster">
+    </div>
+
+    <footer class="closing">
+      <strong>ONE MISSION. ONE GOAL. ACE YOUR PYTHON FAT!</strong>
+      <p>Organized by ACM Student Chapter, VIT-AP University.</p>
+    </footer>
+  </main>
+</div>
+</body>
+</html>
